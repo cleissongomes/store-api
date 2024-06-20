@@ -1,3 +1,5 @@
+import ClientService from '../services/client.service.js';
+
 async function createClient(req, res, next) {
   try {
     let client = req.body;
@@ -10,8 +12,7 @@ async function createClient(req, res, next) {
     ) {
       throw new Error('Name, CPF, Phone, Email e Address são obrigatórios.');
     }
-    //ClientService
-    res.send({});
+    res.send(await ClientService.createClient(client));
     logger.info(`POST /client - ${JSON.stringify(client)}`);
   } catch (err) {
     next(err);
