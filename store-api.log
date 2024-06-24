@@ -4,3 +4,11 @@
 2024-06-24T22:12:57.208Z [store-api] error: POST  - connect is not a function
 2024-06-24T22:17:01.807Z [store-api] info: POST /client - {"name":"Cleisson","cpf":"111111111111","phone":"99999999999","email":"cleisson66@hotmail.com","address":"Rua x, n 1"}
 2024-06-24T22:21:54.655Z [store-api] info: POST /client - {"name":"Cleisson","cpf":"111111111111","phone":"99999999999","email":"cleisson66@hotmail.com","address":"Rua x, n 1"}
+2024-06-24T22:44:33.659Z [store-api] info: POST /client - {"name":"Cleisson","cpf":"111111111111","phone":"99999999999","email":"cleisson66@hotmail.com","address":"Rua x, n 1"}
+2024-06-24T23:00:44.393Z [store-api] info: GET /client
+2024-06-24T23:01:17.848Z [store-api] info: GET /client
+2024-06-24T23:01:25.072Z [store-api] info: GET /client
+2024-06-24T23:03:23.090Z [store-api] info: GET /client
+2024-06-24T23:03:52.562Z [store-api] info: GET /client
+2024-06-24T23:04:23.926Z [store-api] info: GET /client
+2024-06-24T23:04:41.311Z [store-api] info: GET /client
