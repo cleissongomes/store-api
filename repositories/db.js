@@ -13,6 +13,4 @@ async function connect() {
   return pool.connect();
 }
 
-export default {
-  connect,
-};
+export default connect;

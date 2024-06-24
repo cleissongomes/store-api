@@ -1,2 +1,6 @@
 2024-06-19T13:07:27.788Z [store-api] error: undefined undefined undefined
 2024-06-19T13:25:39.210Z [store-api] error: POST  - Name, CPF, Phone, Email e Address são obrigatórios.
+2024-06-20T13:32:28.251Z [store-api] error: POST  - connect is not a function
+2024-06-24T22:12:57.208Z [store-api] error: POST  - connect is not a function
+2024-06-24T22:17:01.807Z [store-api] info: POST /client - {"name":"Cleisson","cpf":"111111111111","phone":"99999999999","email":"cleisson66@hotmail.com","address":"Rua x, n 1"}
+2024-06-24T22:21:54.655Z [store-api] info: POST /client - {"name":"Cleisson","cpf":"111111111111","phone":"99999999999","email":"cleisson66@hotmail.com","address":"Rua x, n 1"}
