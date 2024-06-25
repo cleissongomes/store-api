@@ -57,9 +57,13 @@ async function updateClient() {
   }
 }
 
-async function deleteClient() {
+async function deleteClient(id) {
   const conn = await connect();
   try {
+    const res = await conn.query('DELETE FROM clients WHERE client_id = $1', [
+      id,
+    ]);
+    return res.rows;
   } catch (err) {
     throw err;
   } finally {

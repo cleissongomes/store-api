@@ -19,3 +19,6 @@
 2024-06-25T12:44:18.667Z [store-api] info: GET /client
 2024-06-25T12:44:33.422Z [store-api] info: GET /client
 2024-06-25T12:44:40.352Z [store-api] info: GET /client
+2024-06-25T13:06:34.922Z [store-api] error: DELETE  - syntax error at or near "*"
+2024-06-25T13:06:55.041Z [store-api] info: DELETE /client
+2024-06-25T13:07:06.569Z [store-api] info: GET /client
