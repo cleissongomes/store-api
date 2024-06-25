@@ -12,3 +12,10 @@
 2024-06-24T23:03:52.562Z [store-api] info: GET /client
 2024-06-24T23:04:23.926Z [store-api] info: GET /client
 2024-06-24T23:04:41.311Z [store-api] info: GET /client
+2024-06-25T12:20:34.740Z [store-api] info: GET /client
+2024-06-25T12:40:14.773Z [store-api] error: GET  - rq is not defined
+2024-06-25T12:40:47.215Z [store-api] error: GET  - syntax error at or near ","
+2024-06-25T12:42:12.336Z [store-api] error: GET  - syntax error at or near ","
+2024-06-25T12:44:18.667Z [store-api] info: GET /client
+2024-06-25T12:44:33.422Z [store-api] info: GET /client
+2024-06-25T12:44:40.352Z [store-api] info: GET /client
