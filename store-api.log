@@ -22,3 +22,15 @@
 2024-06-25T13:06:34.922Z [store-api] error: DELETE  - syntax error at or near "*"
 2024-06-25T13:06:55.041Z [store-api] info: DELETE /client
 2024-06-25T13:07:06.569Z [store-api] info: GET /client
+2024-06-25T13:43:00.330Z [store-api] error: PUT  - syntax error at or near ")"
+2024-06-25T13:44:53.816Z [store-api] error: PUT  - connect ETIMEDOUT 52.23.141.75:5432
+2024-06-25T13:44:55.597Z [store-api] error: PUT  - syntax error at or near ")"
+2024-06-25T13:44:58.108Z [store-api] error: PUT  - syntax error at or near ")"
+2024-06-26T12:26:51.971Z [store-api] error: PUT  - syntax error at or near ")"
+2024-06-26T12:27:19.157Z [store-api] error: PUT  - syntax error at or near ")"
+2024-06-26T12:27:27.312Z [store-api] error: PUT  - syntax error at or near ")"
+2024-06-26T12:28:02.660Z [store-api] error: PUT  - syntax error at or near ")"
+2024-06-26T12:34:51.598Z [store-api] error: PUT  - syntax error at or near "="
+2024-06-26T12:35:22.793Z [store-api] error: PUT  - syntax error at or near "="
+2024-06-26T12:36:29.160Z [store-api] info: PUT /client - {"client_id":1,"name":"Cleisson","cpf":"211111111111","phone":"99999999999","email":"cleisson66@gmail.com","address":"Rua x, n 1"}
+2024-06-26T12:36:44.139Z [store-api] info: GET /client
