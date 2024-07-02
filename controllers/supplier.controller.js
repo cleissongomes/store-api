@@ -29,7 +29,17 @@ async function getSuppliers(req, res, next) {
   }
 }
 
+async function getSupplier(req, res, next) {
+  try {
+    res.send(await SupplierService.getSupplier(req.params.id));
+    logger.info('GET /supplier/:id');
+  } catch (err) {
+    next(err);
+  }
+}
+
 export default {
   createSupplier,
   getSuppliers,
+  getSupplier,
 };

@@ -8,7 +8,12 @@ async function getSuppliers() {
   return await SupplierRepository.getSuppliers();
 }
 
+async function getSupplier(id) {
+  return await SupplierRepository.getSupplier(id);
+}
+
 export default {
   createSupplier,
   getSuppliers,
+  getSupplier,
 };
