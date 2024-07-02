@@ -20,6 +20,16 @@ async function createSupplier(req, res, next) {
   }
 }
 
+async function getSuppliers(req, res, next) {
+  try {
+    res.send(await SupplierService.getSuppliers());
+    logger.info('GET /supplier');
+  } catch (err) {
+    next(err);
+  }
+}
+
 export default {
   createSupplier,
+  getSuppliers,
 };

@@ -4,6 +4,11 @@ async function createSupplier(supplier) {
   return await SupplierRepository.insertSupplier(supplier);
 }
 
+async function getSuppliers() {
+  return await SupplierRepository.getSuppliers();
+}
+
 export default {
   createSupplier,
+  getSuppliers,
 };

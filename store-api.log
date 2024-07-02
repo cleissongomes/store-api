@@ -37,3 +37,4 @@
 2024-06-26T13:21:16.593Z [store-api] error: POST  - Name, CNPJ, Phone, Email e Address são obrigatórios.
 2024-06-26T13:22:02.405Z [store-api] error: POST  - loggers is not defined
 2024-06-26T13:22:32.702Z [store-api] info: POST /supplier - {"supplier_id":2,"name":"Fornecedor 1","cnpj":"111111111111","phone":"99999999999","email":"fornecedor@gmail.com","address":"Rua x, n 1"}
+2024-07-02T12:56:20.335Z [store-api] info: GET /supplier

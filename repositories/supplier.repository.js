@@ -21,6 +21,19 @@ async function insertSupplier(supplier) {
   }
 }
 
+async function getSuppliers() {
+  const conn = await connect();
+  try {
+    const res = await conn.query('SELECT * FROM suppliers');
+    return res.rows;
+  } catch (err) {
+    throw err;
+  } finally {
+    conn.release();
+  }
+}
+
 export default {
   insertSupplier,
+  getSuppliers,
 };
