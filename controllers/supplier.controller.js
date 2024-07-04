@@ -38,8 +38,32 @@ async function getSupplier(req, res, next) {
   }
 }
 
+async function updateSupplier(req, res, next) {
+  try {
+    let supplier = req.body;
+    if (
+      !supplier.supplier_id ||
+      !supplier.name ||
+      !supplier.cnpj ||
+      !supplier.phone ||
+      !supplier.email ||
+      !supplier.address
+    ) {
+      throw new Error(
+        'Supplier_id, Name, CNPJ, Phone, Email e Address são obrigatórios'
+      );
+    }
+    supplier = await SupplierService.updateSupplier(supplier);
+    res.send(supplier);
+    logger.info(`PUT /supplier - ${JSON.stringify(supplier)}`);
+  } catch (err) {
+    next(err);
+  }
+}
+
 export default {
   createSupplier,
   getSuppliers,
   getSupplier,
+  updateSupplier,
 };

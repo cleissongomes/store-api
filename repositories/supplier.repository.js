@@ -48,8 +48,31 @@ async function getSupplier(id) {
   }
 }
 
+async function updateSupplier(supplier) {
+  const conn = await connect();
+  try {
+    const sql =
+      'UPDATE suppliers SET name = $1, cnpj = $2, phone = $3, email = $4, address = $5 WHERE supplier_id = $6 RETURNING *';
+    const values = [
+      supplier.name,
+      supplier.cnpj,
+      supplier.phone,
+      supplier.email,
+      supplier.address,
+      supplier.supplier_id,
+    ];
+    const res = await conn.query(sql, values);
+    return res.rows[0];
+  } catch (err) {
+    throw err;
+  } finally {
+    conn.release();
+  }
+}
+
 export default {
   insertSupplier,
   getSuppliers,
   getSupplier,
+  updateSupplier,
 };

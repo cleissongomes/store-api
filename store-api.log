@@ -39,3 +39,16 @@
 2024-06-26T13:22:32.702Z [store-api] info: POST /supplier - {"supplier_id":2,"name":"Fornecedor 1","cnpj":"111111111111","phone":"99999999999","email":"fornecedor@gmail.com","address":"Rua x, n 1"}
 2024-07-02T12:56:20.335Z [store-api] info: GET /supplier
 2024-07-02T13:08:33.287Z [store-api] info: GET /supplier/:id
+2024-07-04T13:03:21.776Z [store-api] error: PUT  - invalid input syntax for type integer: "Rua x, n 1"
+2024-07-04T13:03:34.467Z [store-api] error: PUT  - invalid input syntax for type integer: "Rua x n 1"
+2024-07-04T13:04:03.471Z [store-api] info: PUT /client - {"client_id":1,"name":"Cleisson","cpf":"211111111111","phone":"99999999999","email":"cleisson66@gmail.com","address":"Rua x, n 1"}
+2024-07-04T13:04:40.195Z [store-api] error: PUT  - invalid input syntax for type integer: "Rua x, n 1"
+2024-07-04T13:06:09.848Z [store-api] error: PUT  - invalid input syntax for type integer: "Rua x, n 1"
+2024-07-04T13:06:25.961Z [store-api] error: PUT  - invalid input syntax for type integer: "Rua Dona Carlota"
+2024-07-04T13:06:47.674Z [store-api] error: PUT  - invalid input syntax for type integer: "Rua x, n 1"
+2024-07-04T13:07:57.066Z [store-api] error: PUT  - invalid input syntax for type integer: "Rua x, n 1"
+2024-07-04T13:08:22.020Z [store-api] error: PUT  - Supplier_id, Name, CNPJ, Phone, Email e Address são obrigatórios
+2024-07-04T13:08:29.867Z [store-api] error: PUT  - invalid input syntax for type integer: "Rua x, n 1"
+2024-07-04T13:08:47.123Z [store-api] error: PUT  - invalid input syntax for type integer: "Rua x, n 1"
+2024-07-04T13:10:24.655Z [store-api] info: PUT /supplier - {"supplier_id":1,"name":"1","cnpj":"Fornecedor 7","phone":"211111111111","email":"99999999999","address":"fornecedor66@gmail.com"}
+2024-07-04T13:12:58.316Z [store-api] info: PUT /supplier - {"supplier_id":1,"name":"Fornecedor 7","cnpj":"211111111111","phone":"99999999999","email":"fornecedor66@gmail.com","address":"Rua X, n 1"}
