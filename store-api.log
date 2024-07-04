@@ -52,3 +52,15 @@
 2024-07-04T13:08:47.123Z [store-api] error: PUT  - invalid input syntax for type integer: "Rua x, n 1"
 2024-07-04T13:10:24.655Z [store-api] info: PUT /supplier - {"supplier_id":1,"name":"1","cnpj":"Fornecedor 7","phone":"211111111111","email":"99999999999","address":"fornecedor66@gmail.com"}
 2024-07-04T13:12:58.316Z [store-api] info: PUT /supplier - {"supplier_id":1,"name":"Fornecedor 7","cnpj":"211111111111","phone":"99999999999","email":"fornecedor66@gmail.com","address":"Rua X, n 1"}
+2024-07-04T13:23:48.486Z [store-api] error: DELETE  - Cannot read properties of undefined (reading 'id')
+2024-07-04T13:25:01.122Z [store-api] error: DELETE  - conn.release is not a function
+2024-07-04T13:26:20.960Z [store-api] error: DELETE  - relation "supliers" does not exist
+2024-07-04T13:26:51.142Z [store-api] info: DELETE /supplier
+2024-07-04T13:27:58.545Z [store-api] error: DELETE  - id is not defined
+2024-07-04T13:28:26.735Z [store-api] info: DELETE /supplier
+2024-07-04T13:30:02.273Z [store-api] info: POST /supplier - {"supplier_id":3,"name":"Fornecedor 1","cnpj":"311111111111","phone":"99999999999","email":"fornecedor123@gmail.com","address":"Rua y, n 1"}
+2024-07-04T13:30:30.317Z [store-api] info: POST /supplier - {"supplier_id":4,"name":"Fornecedor 2","cnpj":"311111111111","phone":"99999999999","email":"fornecedor123@gmail.com","address":"Rua z, n 1"}
+2024-07-04T13:30:43.395Z [store-api] info: GET /supplier
+2024-07-04T13:31:00.319Z [store-api] info: GET /supplier/:id
+2024-07-04T13:31:18.372Z [store-api] info: DELETE /supplier
+2024-07-04T13:31:33.293Z [store-api] info: PUT /supplier - {"supplier_id":1,"name":"Fornecedor 1","cnpj":"211111111111","phone":"99999999999","email":"fornecedor66@gmail.com","address":"Rua X, n 1"}

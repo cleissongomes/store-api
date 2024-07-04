@@ -16,9 +16,14 @@ async function updateSupplier(supplier) {
   return await SupplierRepository.updateSupplier(supplier);
 }
 
+async function deleteSupplier(id) {
+  await SupplierRepository.deleteSupplier(id);
+}
+
 export default {
   createSupplier,
   getSuppliers,
   getSupplier,
   updateSupplier,
+  deleteSupplier,
 };

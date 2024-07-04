@@ -61,9 +61,20 @@ async function updateSupplier(req, res, next) {
   }
 }
 
+async function deleteSupplier(req, res, next) {
+  try {
+    await SupplierService.deleteSupplier(req.params.id);
+    res.send('O fornecedor foi excluído com sucesso!');
+    logger.info('DELETE /supplier');
+  } catch (err) {
+    next(err);
+  }
+}
+
 export default {
   createSupplier,
   getSuppliers,
   getSupplier,
   updateSupplier,
+  deleteSupplier,
 };

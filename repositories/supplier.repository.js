@@ -70,9 +70,25 @@ async function updateSupplier(supplier) {
   }
 }
 
+async function deleteSupplier(id) {
+  const conn = await connect();
+  try {
+    const res = await conn.query(
+      'DELETE FROM suppliers WHERE supplier_id = $1',
+      [id]
+    );
+    return res.rows;
+  } catch (err) {
+    throw err;
+  } finally {
+    conn.release();
+  }
+}
+
 export default {
   insertSupplier,
   getSuppliers,
   getSupplier,
   updateSupplier,
+  deleteSupplier,
 };
