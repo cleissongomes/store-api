@@ -22,6 +22,16 @@ async function createProduct(req, res, next) {
   }
 }
 
+async function getProducts(req, res, next) {
+  try {
+    res.send(await ProductService.getProducts());
+    loggers.info('GET /product');
+  } catch (err) {
+    next(err);
+  }
+}
+
 export default {
   createProduct,
+  getProducts,
 };

@@ -21,6 +21,19 @@ async function insertProduct(product) {
   }
 }
 
+async function getProducts() {
+  const conn = await connect();
+  try {
+    const res = await conn.query('SELECT * FROM produtcs');
+    return res.rows;
+  } catch (err) {
+    throw err;
+  } finally {
+    conn.release();
+  }
+}
+
 export default {
   insertProduct,
+  getProducts,
 };
