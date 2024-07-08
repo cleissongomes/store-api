@@ -33,7 +33,23 @@ async function getProducts() {
   }
 }
 
+async function getProduct(id) {
+  const conn = await connect();
+  try {
+    const res = await conn.query(
+      'SELECT * FROM products WHERE product_id = $1',
+      [id]
+    );
+    return res.rows[0];
+  } catch (err) {
+    throw err;
+  } finally {
+    conn.release();
+  }
+}
+
 export default {
   insertProduct,
   getProducts,
+  getProduct,
 };

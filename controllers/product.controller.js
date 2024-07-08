@@ -31,7 +31,17 @@ async function getProducts(req, res, next) {
   }
 }
 
+async function getProduct(req, res, next) {
+  try {
+    res.send(await ProductService.getProduct(req.params.id));
+    loggers.info('GET /product/:id');
+  } catch (err) {
+    next(err);
+  }
+}
+
 export default {
   createProduct,
   getProducts,
+  getProduct,
 };
