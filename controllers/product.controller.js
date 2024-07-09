@@ -1,3 +1,4 @@
+import productService from '../services/product.service.js';
 import ProductService from '../services/product.service.js';
 
 async function createProduct(req, res, next) {
@@ -40,8 +41,32 @@ async function getProduct(req, res, next) {
   }
 }
 
+async function updateProduct(req, res, next) {
+  try {
+    const product = req.body;
+    if (
+      !product.product_id ||
+      !product.name ||
+      !product.description ||
+      !product.value ||
+      !product.stock ||
+      !product.supplier_id
+    ) {
+      throw new Error(
+        'Product_id, Name, Description, Value, Stock e Supplier_id são obrigatórios.'
+      );
+    }
+    product = await ProductService.updateProduct(product);
+    res.send(product);
+    loggers.info(`PUT /product - ${JSON.Stringfy(product)}`);
+  } catch (err) {
+    next(err);
+  }
+}
+
 export default {
   createProduct,
   getProducts,
   getProduct,
+  updateProduct,
 };

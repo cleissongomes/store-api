@@ -12,8 +12,13 @@ async function getProduct(id) {
   return await ProductRepository.getProduct(id);
 }
 
+async function updateProduct(product) {
+  return await ProductRepository.updateProduct(product);
+}
+
 export default {
   createProduct,
   getProducts,
   getProduct,
+  updateProduct,
 };

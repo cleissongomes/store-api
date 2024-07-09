@@ -48,8 +48,31 @@ async function getProduct(id) {
   }
 }
 
+async function updateProduct(product) {
+  const conn = await connect();
+  try {
+    const sql =
+      'UPDATE products SET name = $1, description = $2, value = $3, stock = $4, supplier_id = $5 WHERE product_id = $6 RETURNING *';
+    const values = [
+      product.name,
+      product.description,
+      product.value,
+      product.stock,
+      product.supplier_id,
+      product.product_id,
+    ];
+    const res = await conn.query(sql, values);
+    res.rows[0];
+  } catch (err) {
+    throw err;
+  } finally {
+    conn.release();
+  }
+}
+
 export default {
   insertProduct,
   getProducts,
   getProduct,
+  updateProduct,
 };
