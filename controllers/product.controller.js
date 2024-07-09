@@ -64,9 +64,20 @@ async function updateProduct(req, res, next) {
   }
 }
 
+async function deleteProduct(req, res, next) {
+  try {
+    await ProductService.deleteProduct(req.params.id);
+    res.send('O produto foi excluído com sucesso!');
+    loggers.info('DELETE /product');
+  } catch (err) {
+    next(err);
+  }
+}
+
 export default {
   createProduct,
   getProducts,
   getProduct,
   updateProduct,
+  deleteProduct,
 };

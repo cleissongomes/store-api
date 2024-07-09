@@ -16,9 +16,14 @@ async function updateProduct(product) {
   return await ProductRepository.updateProduct(product);
 }
 
+async function deleteProduct(id) {
+  await ProductRepository.deleteProduct(id);
+}
+
 export default {
   createProduct,
   getProducts,
   getProduct,
   updateProduct,
+  deleteProduct,
 };

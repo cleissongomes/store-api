@@ -70,9 +70,25 @@ async function updateProduct(product) {
   }
 }
 
+async function deleteProduct(id) {
+  const conn = await connect();
+  try {
+    const res = await conn.query(
+      'DELETE * FROM products WHERE product_id = $1',
+      [id]
+    );
+    res.rows;
+  } catch (err) {
+    throw err;
+  } finally {
+    conn.release();
+  }
+}
+
 export default {
   insertProduct,
   getProducts,
   getProduct,
   updateProduct,
+  deleteProduct,
 };
