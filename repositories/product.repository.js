@@ -4,7 +4,7 @@ async function insertProduct(product) {
   const conn = await connect();
   try {
     const sql =
-      'INSERT INTO products(name, description, value, stock, supplier_id) VALUES $1, $2, $3, $4, $5 RETURNING *';
+      'INSERT INTO products(name, description, value, stock, supplier_id) VALUES ($1, $2, $3, $4, $5) RETURNING *';
     const values = [
       product.name,
       product.description,
@@ -24,7 +24,7 @@ async function insertProduct(product) {
 async function getProducts() {
   const conn = await connect();
   try {
-    const res = await conn.query('SELECT * FROM produtcs');
+    const res = await conn.query('SELECT * FROM products');
     return res.rows;
   } catch (err) {
     throw err;
@@ -62,7 +62,7 @@ async function updateProduct(product) {
       product.product_id,
     ];
     const res = await conn.query(sql, values);
-    res.rows[0];
+    return res.rows[0];
   } catch (err) {
     throw err;
   } finally {
@@ -73,10 +73,9 @@ async function updateProduct(product) {
 async function deleteProduct(id) {
   const conn = await connect();
   try {
-    const res = await conn.query(
-      'DELETE * FROM products WHERE product_id = $1',
-      [id]
-    );
+    const res = await conn.query('DELETE FROM products WHERE product_id = $1', [
+      id,
+    ]);
     res.rows;
   } catch (err) {
     throw err;

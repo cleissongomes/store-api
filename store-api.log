@@ -64,3 +64,27 @@
 2024-07-04T13:31:00.319Z [store-api] info: GET /supplier/:id
 2024-07-04T13:31:18.372Z [store-api] info: DELETE /supplier
 2024-07-04T13:31:33.293Z [store-api] info: PUT /supplier - {"supplier_id":1,"name":"Fornecedor 1","cnpj":"211111111111","phone":"99999999999","email":"fornecedor66@gmail.com","address":"Rua X, n 1"}
+2024-07-09T22:11:02.944Z [store-api] error: POST  - syntax error at or near "$1"
+2024-07-09T22:11:55.914Z [store-api] error: POST  - Assignment to constant variable.
+2024-07-09T22:14:45.184Z [store-api] info: GET /supplier
+2024-07-09T22:15:00.026Z [store-api] error: POST  - Assignment to constant variable.
+2024-07-09T22:17:32.979Z [store-api] error: POST  - loggers is not defined
+2024-07-09T22:18:56.716Z [store-api] info: POST /product - {"product_id":4,"supplier_id":1,"name":"Notebook Samsung","description":"Notebook Samsung i3 32gb","value":"5500","stock":80}
+2024-07-09T22:19:46.451Z [store-api] error: GET  - relation "produtcs" does not exist
+2024-07-09T22:20:00.216Z [store-api] error: GET  - relation "produtcs" does not exist
+2024-07-09T22:20:46.917Z [store-api] error: GET  - loggers is not defined
+2024-07-09T22:21:34.748Z [store-api] info: GET /product
+2024-07-09T22:21:44.741Z [store-api] info: GET /product/:id
+2024-07-09T22:21:49.890Z [store-api] info: GET /product/:id
+2024-07-09T22:22:02.476Z [store-api] error: DELETE  - syntax error at or near "*"
+2024-07-09T22:22:17.505Z [store-api] error: DELETE  - syntax error at or near "*"
+2024-07-09T22:23:01.108Z [store-api] info: DELETE /product
+2024-07-09T22:23:08.042Z [store-api] info: DELETE /product
+2024-07-09T22:23:36.226Z [store-api] error: PUT  - Product_id, Name, Description, Value, Stock e Supplier_id são obrigatórios.
+2024-07-09T22:24:24.908Z [store-api] error: PUT  - Assignment to constant variable.
+2024-07-09T22:25:00.363Z [store-api] error: PUT  - JSON.Stringfy is not a function
+2024-07-09T22:28:03.768Z [store-api] error: PUT  - JSON.Stringfy is not a function
+2024-07-09T22:29:21.891Z [store-api] error: PUT  - JSON.Stringfy is not a function
+2024-07-09T22:31:43.093Z [store-api] error: PUT  - JSON.Stringfy is not a function
+2024-07-09T22:35:47.662Z [store-api] error: PUT  - JSON.Stringfy is not a function
+2024-07-09T22:38:19.626Z [store-api] error: PUT  - JSON.Stringfy is not a function
