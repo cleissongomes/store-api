@@ -31,4 +31,4 @@ app.use((err, req, res, next) => {
   res.status(400).send({ error: err.message });
 });
 
-app.listen(5000, () => console.log('API Started!'));
+app.listen(3000, () => console.log('API Started!'));

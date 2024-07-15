@@ -1,4 +1,3 @@
-import productService from '../services/product.service.js';
 import ProductService from '../services/product.service.js';
 
 async function createProduct(req, res, next) {

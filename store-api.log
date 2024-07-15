@@ -88,3 +88,6 @@
 2024-07-09T22:31:43.093Z [store-api] error: PUT  - JSON.Stringfy is not a function
 2024-07-09T22:35:47.662Z [store-api] error: PUT  - JSON.Stringfy is not a function
 2024-07-09T22:38:19.626Z [store-api] error: PUT  - JSON.Stringfy is not a function
+2024-07-15T22:04:14.196Z [store-api] error: POST  - insert or update on table "products" violates foreign key constraint "fk_suppliers"
+2024-07-15T22:17:52.151Z [store-api] error: POST  - O supplier_id informado não existe.
+2024-07-15T22:18:01.904Z [store-api] error: PUT  - O supplier_id informado não existe.
