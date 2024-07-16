@@ -14,6 +14,16 @@ async function createSale(req, res, next) {
   }
 }
 
+async function getSales(req, res, next) {
+  try {
+    res.send(await SaleService.getSales());
+    logger.info('GET /sale');
+  } catch (err) {
+    next(err);
+  }
+}
+
 export default {
   createSale,
+  getSales,
 };

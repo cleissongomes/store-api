@@ -15,6 +15,19 @@ async function insertSale(sale) {
   }
 }
 
+async function getSales() {
+  const conn = await connect();
+  try {
+    const res = await conn.query('SELECT * FROM sales');
+    return res.rows[0];
+  } catch (err) {
+    throw err;
+  } finally {
+    conn.release();
+  }
+}
+
 export default {
   insertSale,
+  getSales,
 };
