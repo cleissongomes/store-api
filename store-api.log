@@ -91,3 +91,9 @@
 2024-07-15T22:04:14.196Z [store-api] error: POST  - insert or update on table "products" violates foreign key constraint "fk_suppliers"
 2024-07-15T22:17:52.151Z [store-api] error: POST  - O supplier_id informado não existe.
 2024-07-15T22:18:01.904Z [store-api] error: PUT  - O supplier_id informado não existe.
+2024-07-16T23:05:07.289Z [store-api] error: POST  - Value, date, client_id e product_id são obrigatórios!
+2024-07-16T23:14:23.316Z [store-api] error: POST  - date/time field value out of range: "16/07/2024"
+2024-07-16T23:15:13.933Z [store-api] error: POST  - date/time field value out of range: "16072024"
+2024-07-16T23:16:39.167Z [store-api] error: POST  - date/time field value out of range: "16/07/2024"
+2024-07-16T23:17:43.697Z [store-api] error: POST  - JSON.stringfy is not a function
+2024-07-16T23:18:28.809Z [store-api] info: POST /sale - {"sale_id":2,"client_id":1,"product_id":1,"value":"5500","date":"2000-01-01T02:00:00.000Z"}
