@@ -12,8 +12,13 @@ async function getSale(id) {
   return await SaleRepository.getSale(id);
 }
 
+async function updateSale(sale) {
+  return await SaleRepository.updateSale(sale);
+}
+
 export default {
   createSale,
   getSales,
   getSale,
+  updateSale,
 };

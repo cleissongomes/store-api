@@ -32,8 +32,31 @@ async function getSale(req, res, next) {
   }
 }
 
+async function updateSale(req, res, next) {
+  try {
+    let sale = req.body;
+    if (
+      !sale.sale_id ||
+      !sale.value ||
+      !sale.date ||
+      !sale.client_id ||
+      !sale.product_id
+    ) {
+      throw new Error(
+        'Sale_id, Value, date, client_id e product_id são obrigatórios!'
+      );
+    }
+    sale = await SaleService.updateSale(sale);
+    res.send(sale);
+    logger.info(`PUT /sale - ${JSON.stringify(sale)}`);
+  } catch (err) {
+    next(err);
+  }
+}
+
 export default {
   createSale,
   getSales,
   getSale,
+  updateSale,
 };
