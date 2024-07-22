@@ -101,3 +101,27 @@
 2024-07-22T22:22:45.641Z [store-api] info: GET /sale/:id
 2024-07-22T22:23:58.484Z [store-api] error: GET  - id is not defined
 2024-07-22T22:24:30.337Z [store-api] info: GET /sale/1
+2024-07-22T22:44:43.129Z [store-api] error: PUT  - Sale_id, Value, date, client_id e product_id são obrigatórios!
+2024-07-22T22:45:20.030Z [store-api] error: PUT  - bind message supplies 4 parameters, but prepared statement "" requires 5
+2024-07-22T22:48:26.531Z [store-api] info: PUT /sale - undefined
+2024-07-22T22:48:46.677Z [store-api] info: GET /sale
+2024-07-22T22:49:02.440Z [store-api] info: PUT /sale - undefined
+2024-07-22T22:50:49.143Z [store-api] info: PUT /sale - undefined
+2024-07-22T22:53:33.594Z [store-api] info: GET /sale
+2024-07-22T22:54:20.125Z [store-api] info: PUT /sale - undefined
+2024-07-22T22:54:45.698Z [store-api] info: GET /sale
+2024-07-22T22:55:35.735Z [store-api] info: PUT /sale - undefined
+2024-07-22T22:55:52.580Z [store-api] info: PUT /sale - undefined
+2024-07-22T22:56:10.976Z [store-api] info: PUT /sale - {"sale_id":1,"client_id":1,"product_id":1,"value":"5000","date":"2000-01-02T02:00:00.000Z"}
+2024-07-22T22:56:34.056Z [store-api] info: GET /sale
+2024-07-22T23:54:02.488Z [store-api] info: POST /sale - {"sale_id":3,"client_id":1,"product_id":1,"value":"7500","date":"2000-01-01T02:00:00.000Z"}
+2024-07-22T23:54:08.749Z [store-api] info: GET /sale
+2024-07-22T23:54:24.450Z [store-api] info: GET /sale
+2024-07-22T23:54:33.099Z [store-api] info: POST /sale - {"sale_id":4,"client_id":1,"product_id":1,"value":"7500","date":"2000-01-01T02:00:00.000Z"}
+2024-07-22T23:54:36.967Z [store-api] info: GET /sale
+2024-07-22T23:54:55.311Z [store-api] info: GET /sale
+2024-07-22T23:55:56.800Z [store-api] info: GET /sale
+2024-07-22T23:56:26.131Z [store-api] info: DELETE /sale - 4
+2024-07-22T23:56:33.127Z [store-api] info: DELETE /sale - 3
+2024-07-22T23:56:41.362Z [store-api] info: DELETE /sale - 2
+2024-07-22T23:56:46.203Z [store-api] info: GET /sale

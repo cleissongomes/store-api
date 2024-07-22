@@ -1,3 +1,4 @@
+import saleService from '../services/sale.service.js';
 import SaleService from '../services/sale.service.js';
 
 async function createSale(req, res, next) {
@@ -54,9 +55,20 @@ async function updateSale(req, res, next) {
   }
 }
 
+async function deleteSale(req, res, next) {
+  try {
+    await SaleService.deleteSale(req.params.id);
+    res.send('A venda foi excluída com sucesso!');
+    logger.info(`DELETE /sale - ${req.params.id}`);
+  } catch (err) {
+    next(err);
+  }
+}
+
 export default {
   createSale,
   getSales,
   getSale,
   updateSale,
+  deleteSale,
 };

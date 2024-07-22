@@ -16,9 +16,14 @@ async function updateSale(sale) {
   return await SaleRepository.updateSale(sale);
 }
 
+async function deleteSale(id) {
+  await SaleRepository.deleteSale(id);
+}
+
 export default {
   createSale,
   getSales,
   getSale,
   updateSale,
+  deleteSale,
 };

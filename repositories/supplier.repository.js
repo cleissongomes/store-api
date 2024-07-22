@@ -62,7 +62,7 @@ async function updateSupplier(supplier) {
       supplier.supplier_id,
     ];
     const res = await conn.query(sql, values);
-    return res.rows[0];
+    res.rows[0];
   } catch (err) {
     throw err;
   } finally {
