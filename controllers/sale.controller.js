@@ -23,7 +23,17 @@ async function getSales(req, res, next) {
   }
 }
 
+async function getSale(req, res, next) {
+  try {
+    res.send(await SaleService.getSale(req.params.id));
+    logger.info(`GET /sale/${req.params.id}`);
+  } catch (err) {
+    next(err);
+  }
+}
+
 export default {
   createSale,
   getSales,
+  getSale,
 };

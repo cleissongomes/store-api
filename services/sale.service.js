@@ -8,7 +8,12 @@ async function getSales() {
   return await SaleRepository.getSales();
 }
 
+async function getSale(id) {
+  return await SaleRepository.getSale(id);
+}
+
 export default {
   createSale,
   getSales,
+  getSale,
 };

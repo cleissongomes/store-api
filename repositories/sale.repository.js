@@ -27,7 +27,22 @@ async function getSales() {
   }
 }
 
+async function getSale(id) {
+  const conn = await connect();
+  try {
+    const res = await conn.query('SELECT * FROM sales WHERE sale_id = $1', [
+      id,
+    ]);
+    return res.rows[0];
+  } catch (err) {
+    throw err;
+  } finally {
+    conn.release();
+  }
+}
+
 export default {
   insertSale,
   getSales,
+  getSale,
 };
