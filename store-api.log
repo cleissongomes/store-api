@@ -125,3 +125,8 @@
 2024-07-22T23:56:33.127Z [store-api] info: DELETE /sale - 3
 2024-07-22T23:56:41.362Z [store-api] info: DELETE /sale - 2
 2024-07-22T23:56:46.203Z [store-api] info: GET /sale
+2024-07-23T22:45:49.714Z [store-api] error: POST  - O client_id informado não existe.O product_id informado não existe.
+2024-07-23T22:46:52.787Z [store-api] error: PUT  - O client_id informado não existe.O product_id informado não existe.
+2024-07-23T22:47:27.134Z [store-api] info: POST /sale - {"sale_id":5,"client_id":1,"product_id":1,"value":"7500","date":"2000-01-01T02:00:00.000Z"}
+2024-07-23T22:47:46.073Z [store-api] info: PUT /sale - {"sale_id":5,"client_id":1,"product_id":1,"value":"5000","date":"2000-01-02T02:00:00.000Z"}
+2024-07-23T22:47:51.010Z [store-api] info: GET /sale
