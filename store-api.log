@@ -130,3 +130,45 @@
 2024-07-23T22:47:27.134Z [store-api] info: POST /sale - {"sale_id":5,"client_id":1,"product_id":1,"value":"7500","date":"2000-01-01T02:00:00.000Z"}
 2024-07-23T22:47:46.073Z [store-api] info: PUT /sale - {"sale_id":5,"client_id":1,"product_id":1,"value":"5000","date":"2000-01-02T02:00:00.000Z"}
 2024-07-23T22:47:51.010Z [store-api] info: GET /sale
+2024-07-26T22:46:47.424Z [store-api] info: GET /product
+2024-07-26T22:47:41.830Z [store-api] info: POST /sale - {"sale_id":6,"client_id":1,"product_id":4,"value":"7500","date":"2000-01-01T02:00:00.000Z"}
+2024-07-26T22:47:52.868Z [store-api] info: GET /product
+2024-07-26T22:50:14.319Z [store-api] error: POST  - O produto informado não possui estoque.
+2024-07-26T22:50:38.520Z [store-api] error: POST  - O produto informado não possui estoque.
+2024-07-26T22:51:20.337Z [store-api] error: POST  - O produto informado não possui estoque.
+2024-07-26T22:51:28.447Z [store-api] info: GET /product
+2024-07-26T22:51:40.087Z [store-api] info: GET /sale
+2024-07-26T22:52:10.389Z [store-api] error: POST  - O produto informado não possui estoque.
+2024-07-26T22:53:58.270Z [store-api] error: POST  - O produto informado não possui estoque.
+2024-07-26T22:55:46.563Z [store-api] error: POST  - O produto informado não possui estoque.
+2024-07-26T22:56:17.305Z [store-api] error: POST  - O produto informado não possui estoque.
+2024-07-26T22:56:22.785Z [store-api] error: POST  - O produto informado não possui estoque.
+2024-07-26T22:56:26.749Z [store-api] info: GET /product
+2024-07-26T22:56:48.186Z [store-api] info: GET /sale
+2024-07-26T22:57:03.347Z [store-api] error: POST  - O produto informado não possui estoque.
+2024-07-26T22:58:42.670Z [store-api] error: POST  - O produto informado não possui estoque.
+2024-07-26T22:59:27.288Z [store-api] error: POST  - O produto informado não possui estoque.
+2024-07-30T22:02:17.933Z [store-api] error: POST  - O produto informado não possui estoque.
+2024-07-30T22:07:39.206Z [store-api] error: POST  - O supplier_id informado não existe.
+2024-07-30T22:08:23.574Z [store-api] info: GET /supplier
+2024-07-30T22:08:39.802Z [store-api] info: POST /product - {"product_id":6,"supplier_id":1,"name":"Notebook Dell","description":"Notebook Dell i7 32gb","value":"8500","stock":100}
+2024-07-30T22:08:50.795Z [store-api] error: POST  - O produto informado não possui estoque.
+2024-07-30T22:08:59.481Z [store-api] info: GET /product
+2024-07-30T22:09:42.401Z [store-api] info: POST /sale - {"sale_id":7,"client_id":1,"product_id":6,"value":"7000","date":"2000-01-01T02:00:00.000Z"}
+2024-07-30T22:10:00.430Z [store-api] info: GET /sale
+2024-07-30T22:10:27.256Z [store-api] info: GET /product
+2024-07-30T22:10:56.970Z [store-api] info: DELETE /sale - 7
+2024-07-30T22:11:02.765Z [store-api] info: GET /sale
+2024-07-30T22:16:07.247Z [store-api] info: POST /product - {"product_id":7,"supplier_id":1,"name":"Notebook Asus","description":"Notebook Asus i3 16gb","value":"3500","stock":1}
+2024-07-30T22:16:22.301Z [store-api] info: POST /sale - {"sale_id":8,"client_id":1,"product_id":7,"value":"3500","date":"2000-01-01T02:00:00.000Z"}
+2024-07-30T22:16:26.634Z [store-api] error: POST  - O produto informado não possui estoque.
+2024-07-30T22:30:13.061Z [store-api] info: GET /product
+2024-07-30T22:30:44.040Z [store-api] info: DELETE /sale - 1
+2024-07-30T22:30:49.453Z [store-api] info: GET /product
+2024-07-30T22:31:41.069Z [store-api] error: DELETE  - O id da sale informado não existe.
+2024-07-30T22:42:08.237Z [store-api] info: GET /product
+2024-07-30T22:44:12.620Z [store-api] info: GET /sale
+2024-07-30T22:45:11.795Z [store-api] error: PUT  - undefinedO product_id informado não existe.
+2024-07-30T22:46:04.227Z [store-api] error: PUT  - undefinedO product_id informado não existe.
+2024-07-30T22:47:18.331Z [store-api] error: PUT  - undefinedO product_id informado não existe.
+2024-07-30T22:48:31.308Z [store-api] error: PUT  - could not determine data type of parameter $4
